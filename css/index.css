@@ -153,6 +153,11 @@ table {
 html {
   font-size: 62.5%;
 }
+body {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0, auto;
+}
 h1 {
   font-family: 'Qwigley', cursive;
   font-size: 7.5rem;
@@ -175,7 +180,7 @@ nav .links {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 60%;
+  width: 57%;
 }
 nav .links a {
   font-family: 'Oxygen', sans-serif;
@@ -231,4 +236,13 @@ footer .bottom-links a {
   color: white;
   font-family: 'Oxygen', sans-serif;
   text-decoration: none;
+}
+section.about-top {
+  display: flex;
+}
+section.about-top .about-text {
+  max-width: 48%;
+}
+section.about-top .about-image {
+  max-width: 48%;
 }
