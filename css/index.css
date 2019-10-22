@@ -154,9 +154,8 @@ html {
   font-size: 62.5%;
 }
 body {
-  max-width: 1152px;
   width: 100%;
-  margin: 0, auto;
+  margin: 0 auto;
 }
 h1 {
   font-family: 'Qwigley', cursive;
@@ -179,12 +178,45 @@ nav {
   align-items: center;
   text-align: center;
   background-color: #123A16;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  nav {
+    justify-content: space-between;
+  }
+}
+nav .website-title {
+  width: 400px;
+}
+@media (max-width: 500px) {
+  nav .website-title {
+    width: 45%;
+  }
+  nav .website-title h1 {
+    font-size: 48px;
+  }
 }
 nav .links {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 57%;
+}
+@media (max-width: 500px) {
+  nav .links {
+    justify-content: flex-end;
+    padding-right: 5%;
+  }
+}
+nav .links i {
+  display: none;
+  font-size: 3rem;
+  color: white;
+}
+@media (max-width: 500px) {
+  nav .links i {
+    display: block;
+  }
 }
 nav .links a {
   font-family: 'Oxygen', sans-serif;
@@ -197,6 +229,17 @@ nav .links a {
   color: #FFFFFF;
   text-decoration: none;
 }
+@media (max-width: 800px) {
+  nav .links a {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  nav .links a {
+    display: none;
+  }
+}
 nav .links a:hover {
   text-decoration: underline;
   font-size: 2.1rem;
@@ -206,6 +249,7 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 2%;
+  height: 200px;
 }
 footer .contact {
   display: flex;
@@ -217,12 +261,36 @@ footer .contact {
   color: white;
   font-family: 'Oxygen', sans-serif;
 }
+@media (max-width: 500px) {
+  footer .contact {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+@media (max-width: 800px) {
+  footer .contact {
+    width: 50%;
+  }
+}
 footer .bottom-links {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
   width: 33%;
+}
+@media (max-width: 800px) {
+  footer .bottom-links {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  footer .bottom-links {
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+  }
 }
 footer .bottom-links button {
   background-color: #D2DDD3;
@@ -233,6 +301,7 @@ footer .bottom-links button {
   line-height: 2.4rem;
   font-weight: normal;
   padding: 2%;
+  width: 120px;
 }
 footer .bottom-links a {
   font-size: 1.4rem;
@@ -248,28 +317,37 @@ footer .bottom-links a {
   align-items: center;
   text-align: center;
 }
-.top-section div h2 {
-  width: 70%;
+.top-section .heading {
+  width: 40%;
+  font-size: 3rem;
+  line-height: 3.6rem;
+  font-family: 'Oxygen', sans-serif;
+  align-self: center;
+  margin-top: 10%;
+  margin-bottom: 1%;
 }
-.top-section div p {
+.top-section .exposure {
   justify-content: center;
   align-items: center;
-  width: 38%;
-  margin-left: 25%;
+  width: 43%;
+  font-size: 1.8rem;
+  font-family: 'Oxygen', sans-serif;
+  line-height: 2.4rem;
+  margin-bottom: 1%;
 }
-.top-section .btn {
-  border: 2px solid #242825;
+.top-section .find-a-story-btn {
   background-color: white;
-  text-align: center;
-  box-sizing: border-box;
+  border: 1px solid black;
+  color: black;
   border-radius: 6px;
-  margin-right: 8%;
-  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  margin: 2%;
+  font-size: 1.8rem;
+  padding: 0.5% 1%;
 }
 .top-section .arrow {
-  font-size: 1.5rem;
-  margin-top: 8%;
-  margin-right: 8%;
+  font-size: 2rem;
+  padding-top: 10%;
+  padding-bottom: 4%;
 }
 .featured-stories {
   display: flex;
@@ -277,6 +355,45 @@ footer .bottom-links a {
   justify-content: center;
   align-items: center;
   text-align: center;
+  height: 800px;
+  background: radial-gradient(50% 50% at 50% 59.38%, rgba(61, 68, 62, 0.7) 0%, rgba(61, 68, 62, 0) 100%);
+  background-image: url("../images/sunset.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+.featured-stories .fs-header {
+  color: white;
+  width: 43%;
+  padding-bottom: 5%;
+}
+.featured-stories .story-preview {
+  width: 43%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.featured-stories .story-preview h2 {
+  padding-bottom: 3%;
+}
+.featured-stories .story-preview h3 {
+  font-size: 2.1rem;
+  padding-bottom: 3%;
+}
+.featured-stories .story-preview p {
+  font-family: 'Domine', serif;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+.featured-stories .read-btn {
+  background-color: #25742C;
+  border: 0px;
+  color: white;
+  border-radius: 6px;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  margin-bottom: 5%;
 }
 h2 {
   font-size: 3.6rem;
@@ -284,11 +401,17 @@ h2 {
 }
 section.about-top {
   display: flex;
+  justify-content: space-between;
   margin: 4% 8%;
 }
 section.about-top .about-text {
   max-width: 48%;
   margin-right: 5%;
+}
+@media (max-width: 800px) {
+  section.about-top .about-text {
+    max-width: 100%;
+  }
 }
 section.about-top .about-text h3 {
   padding-top: 1%;
@@ -305,9 +428,18 @@ section.about-top .about-text .mission {
   padding-top: 2%;
   padding-bottom: 2%;
 }
+section.about-top .about-text .site-guidelines {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
 section.about-top .about-image {
   max-width: 48%;
   align-self: center;
+}
+@media (max-width: 800px) {
+  section.about-top .about-image {
+    display: none;
+  }
 }
 section.about-profiles {
   margin: 4% 8%;
@@ -315,7 +447,41 @@ section.about-profiles {
 section.about-profiles .teammates {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 800px) {
+  section.about-profiles .teammates {
+    justify-content: column;
+  }
 }
 section.about-profiles .teammates .box {
-  max-width: 48%;
+  display: flex;
+  align-content: center;
+  width: 45%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+@media (max-width: 800px) {
+  section.about-profiles .teammates .box {
+    width: 100%;
+  }
+}
+section.about-profiles .teammates .box .img {
+  max-width: 122px;
+  max-height: 122px;
+}
+section.about-profiles .teammates .box .teammate {
+  width: 100%;
+  padding-left: 6%;
+  align-self: center;
+}
+section.about-profiles .teammates .box .teammate h3 {
+  padding-top: 1%;
+  padding-bottom: 2%;
+  font-weight: bold;
+}
+section.about-profiles .teammates .box .teammate p {
+  font-size: 2.1rem;
+  line-height: 2.7rem;
+  font-family: 'Oxygen', sans-serif;
 }

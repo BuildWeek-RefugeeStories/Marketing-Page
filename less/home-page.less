@@ -4,42 +4,150 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-
-div h2 {
-    width: 70%;
-}
-
-div p{
-    justify-content: center;
-    align-items: center;
-    width: 38%;
-    margin-left: 25%;
-}
-
-.btn {
-    border: 2px solid #242825;
-    background-color: white;
-    text-align: center;
-    box-sizing: border-box;
-    border-radius: 6px; 
-    margin-right: 8%;
-    padding: .5rem  1.5rem .5rem  1.5rem;
+    // margin-left: 18%;
+    // margin-top: 10%;
+    
+    .heading {
+        width: 40%;
+        font-size: 3rem;
+        line-height: 3.6rem;
+        font-family: @headline-font;
+        align-self: center;
+        margin-top: 10%;
+        margin-bottom: 1%;
     }
 
+    .exposure{
+        justify-content: center;
+        align-items: center;
+        width: 43%;
+        // margin-left: 20%;
+        font-size: 1.8rem;
+        font-family: @headline-font;
+        line-height: 2.4rem;
+        margin-bottom: 1%;
+    }
+
+    .find-a-story-btn {
+        .custom-btn(white, 1px solid black, black);
+        margin: 2%;
+        font-size:1.8rem;
+        padding: 0.5% 1%;
+    // border: 2px solid #242825;
+    // background-color: white;
+    // text-align: center;
+    // box-sizing: border-box;
+    // border-radius: 6px; 
+    // margin-right: 18%;
+    // padding: .5rem  1.5rem .5rem  1.5rem;
+    }
+    
     .arrow {
-        font-size: 1.5rem;
-        margin-top: 8%;
-        margin-right: 8%;
+        font-size: 2rem;
+        padding-top: 10%;
+        padding-bottom: 4%;
+        // margin-top: 8%;
+        // margin-right: 8%;
+        // .right-arrow {
+        //     color: black;
+        // }
     }
-
 }
-
 .featured-stories {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: 800px;
+    background: radial-gradient(50% 50% at 50% 59.38%, rgba(61, 68, 62, 0.7) 0%, rgba(61, 68, 62, 0) 100%);
+    background-image: url("../images/sunset.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+    
+    color: white;
+    
+    // .left-arrow {
+    //     font-size: 2rem;
+    //     color: white;
+    //     margin-top: 20%;
+    //     margin-right:160%;
+    //     border: 1px solid yellowgreen;
+    // }
 
-}
+
+
+    .fs-header{
+        color: white;
+        width: 43%;
+        padding-bottom: 5%;
+
+    }
+
+    // .text {
+    //     width: 50%;
+    //     margin-left: 25%;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     flex-direction: column;
+    //     color: white;
+    // }
+
+    .story-preview{
+        width: 43%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+
+        h2{
+            padding-bottom: 3%;
+        }
+
+        h3{
+            font-size: 2.1rem;
+            padding-bottom: 3%;
+        }
+
+        p{
+            font-family: @paragraph-font;
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+        }
+    }
+
+    // .right-arrow {
+    //     font-size: 2rem;
+    //     color: white;
+    //     margin-bottom: 20%;
+    //     margin-left: 160%;
+    //     border: 1px solid yellowgreen;
+    //  }
+
+    // .middle-content, h2 {
+    //     margin-top: 2%;
+
+    //     .home {
+    //         margin-top: 8%;
+    //         color: white;
+    //     }
+    
+    
+    // }// This closes middle-content
+
+    .read-btn {
+        .custom-btn(#25742C, 0px, white);
+        // border: 2px solid #242825;
+        // color: white;
+        font-size: 1.8rem;
+        // background-color: #25742C;
+        text-align: center;
+        // box-sizing: border-box;
+        // border-radius: 6px; 
+        // margin-right: .5%;
+        padding: .5rem  1.5rem .5rem  1.5rem;
+        margin-bottom: 5%;
+        }
+
+}// this closes featured stories container
 

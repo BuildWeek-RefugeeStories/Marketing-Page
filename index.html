@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Refugee Stories</title>
-
+  <script src="https://kit.fontawesome.com/c4cbf9de5e.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Qwigley&display=swap" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
 
@@ -13,8 +13,11 @@
 
 <body>
     <nav>
-        <h1>Refugee Stories</h1>
+        <div class="website-title">
+            <h1>Refugee Stories</h1>
+        </div>
         <div class="links"> 
+            <i class="fas fa-bars"></i>
             <a href="#">Home</a>
             <a href="#">Recent Stories</a>
             <a href="#">Submit a Story</a>
@@ -23,14 +26,14 @@
     </nav>
 
 <section class="top-section">
-    <div class=> 
-    <h2>A Safe Space for Refugees to Share Their Stories</h2> </div>
-
+    <div class="heading"> 
+        <h2>A Safe Space for Refugees to Share Their Stories</h2> 
+    </div>
     <div class="exposure">  
-    <p>It is through exposure to another's circumstance that empathy can be increased. 
-    We work to help others build that empathy for people that have been forced from their homes. </p> </div>
+        <p>It is through exposure to another's circumstance that empathy can be increased. We work to help others build that empathy for people that have been forced from their homes. </p> 
+    </div>
 
-    <button class="btn">
+    <button class="find-a-story-btn">
         Find a Story
     </button>
 
@@ -40,31 +43,40 @@
 </section>
 
 <section class ="featured-stories">
+    <div class="fs-header">
+        <h2>Featured Stories:</h2>
+    </div>
 
-    <img class = "sunset-img" src= /Users/sumeya.ali/Documents/Marketing-Page/Images/sunset.jpg>
-
-    <h2>Featured Stories:</h2>
-    <h2>Rebuilding Home</h2>
-    <h3>Elias G. </h3>
-
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quaerat, maiores quos quibusdam veniam, error porro enim quia magnam rerum unde ad corrupti animi inventore. Laborum perspiciatis optio enim autem! </p>
-
-    <button class="read">Read More</button>
+    <div class="story-preview">
+        <h2>Rebuilding Home</h2>
+        <h3>Elias G. </h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quaerat, maiores quos quibusdam veniam, error porro enim quia magnam rerum unde ad corrupti animi inventore. Laborum perspiciatis optio enim autem! </p>
+    </div>
+    <button class="read-btn">
+        <p>Read More</p>
+    </button>
 
 </section>
    
 <footer>
         <div class="contact">
+            <div>
             <p>Contact Us:</p>
+            </div>
+            <div>
             <p>Number Street <br> City <br> State, ZIP</p>
-            <p>(xxx) xxx-xxx <br> sample@email.com</p>
+            </div>
+            <div class="contact-num-email">
+            <p>(xxx) xxx-xxx</p> <br>
+            <p>sample@email.com</p>
+            </div>
         </div>
         <div class="bottom-links">
             <button>
                 <p>Admin Login</p>
             </button>
             <a href="#">Privacy Policy</a>
-            <a href="#">About Us</a>
+            <a href="about-us.html">About Us</a>
         </div>
     </footer>
 </body>
