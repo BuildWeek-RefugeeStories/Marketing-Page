@@ -272,3 +272,13 @@ section.about-top .about-image {
   max-width: 48%;
   align-self: center;
 }
+section.about-profiles {
+  margin: 4% 8%;
+}
+section.about-profiles .teammates {
+  display: flex;
+  flex-wrap: wrap;
+}
+section.about-profiles .teammates .box {
+  max-width: 48%;
+}
