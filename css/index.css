@@ -241,6 +241,43 @@ footer .bottom-links a {
   font-family: 'Oxygen', sans-serif;
   text-decoration: none;
 }
+.top-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.top-section div h2 {
+  width: 70%;
+}
+.top-section div p {
+  justify-content: center;
+  align-items: center;
+  width: 38%;
+  margin-left: 25%;
+}
+.top-section .btn {
+  border: 2px solid #242825;
+  background-color: white;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin-right: 8%;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+}
+.top-section .arrow {
+  font-size: 1.5rem;
+  margin-top: 8%;
+  margin-right: 8%;
+}
+.featured-stories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 h2 {
   font-size: 3.6rem;
   padding-bottom: 2%;
