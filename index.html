@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Refugee Stories</title>
+  <script src=“https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js“></script>
   <script src="https://kit.fontawesome.com/c4cbf9de5e.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Qwigley&display=swap" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
@@ -42,7 +43,61 @@
     </div>
 </section>
 
-<section class ="featured-stories">
+<section>
+<div class="carousel">
+        <div class="carousel-inner">
+            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+            <div class="carousel-item">
+                 
+                
+                <!-- <div  class= "carousel-content">  -->
+                        <div class="text">
+                            <div class="features-stories-header">
+                            <h2>Featured Stories:</h2>
+                            </div>
+                            <div class="story-preview">
+                                <h2>Rebuilding Home</h2>
+                                <h3>Elias G.</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quaerat, maiores quos quibusdam veniam, error porro enim quia magnam rerum unde ad corrupti animi inventore. Laborum perspiciatis optio enim autem! </p>
+                            </div>
+                            <button class="read">Read More</button>   
+                        </div>
+                <!-- </div> -->
+                <img src="./img/sunset.jpg">
+            </div>
+            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item">
+                <img src="./img/tank track.jpg">
+            </div>
+            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item">
+                <img src="./img/tents.jpg">
+            </div>
+            <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+            <label for="carousel-2" class="carousel-control next control-1">›</label>
+            <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+            <label for="carousel-3" class="carousel-control next control-2">›</label>
+            <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+            <label for="carousel-1" class="carousel-control next control-3">›</label>
+            <ol class="carousel-indicators">
+                <li>
+                    <label for="carousel-1" class="carousel-bullet">-</label>
+                </li>
+                <li>
+                    <label for="carousel-2" class="carousel-bullet">-</label>
+                </li>
+                <li>
+                    <label for="carousel-3" class="carousel-bullet">-</label>
+                </li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- <section class ="featured-stories">
     <div class="fs-header">
         <h2>Featured Stories:</h2>
     </div>
@@ -56,7 +111,7 @@
         <p>Read More</p>
     </button>
 
-</section>
+</section> -->
    
 <footer>
         <div class="contact">
