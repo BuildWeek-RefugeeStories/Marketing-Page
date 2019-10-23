@@ -1,129 +1,6 @@
-@font-face {
-  font-family: 'Domine';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Domine'), local('Domine-Regular'), url(https://fonts.gstatic.com/s/domine/v7/L0x8DFMnlVwD4h3hu_qi.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Oxygen';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Oxygen Regular'), local('Oxygen-Regular'), url(https://fonts.gstatic.com/s/oxygen/v9/2sDfZG1Wl4LcnbuKjk0j.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Qwigley';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Qwigley'), local('Qwigley-Regular'), url(https://fonts.gstatic.com/s/qwigley/v9/1cXzaU3UGJb5tGoCiVtmjw.ttf) format('truetype');
-}
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+.sunset {
+  max-width: 800%;
+  height: auto;
 }
 body {
   line-height: 1;
@@ -611,11 +488,16 @@ footer .bottom-links a {
   z-index: 9999;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
 }
-h2 {
-  font-size: 3.6rem;
-  padding-bottom: 2%;
+.featured-stories .left-arrow {
+  font-size: 2rem;
+  color: white;
+  margin-top: 20%;
+  margin-right: 160%;
+  border: 1px solid yellowgreen;
 }
-section.about-top {
+.featured-stories .text {
+  width: 50%;
+  margin-left: 25%;
   display: flex;
   justify-content: space-between;
   margin: 4% 8%;
