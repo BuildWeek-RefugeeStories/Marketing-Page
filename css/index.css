@@ -172,6 +172,14 @@ h3 {
   font-size: 2.4rem;
   font-family: 'Oxygen', sans-serif;
 }
+h4 {
+  font-size: 2.1rem;
+  font-family: 'Oxygen', sans-serif;
+}
+h5 {
+  font-size: 1.8rem;
+  font-family: 'Oxygen', sans-serif;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -251,6 +259,11 @@ footer {
   padding: 2%;
   height: 130px;
 }
+@media (max-width: 500px) {
+  footer {
+    height: 200px;
+  }
+}
 footer .contact {
   display: flex;
   justify-content: space-evenly;
@@ -278,7 +291,7 @@ footer .bottom-links {
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  width: 33%;
+  width: 40%;
 }
 @media (max-width: 800px) {
   footer .bottom-links {
@@ -326,6 +339,12 @@ footer .bottom-links a {
   margin-top: 10%;
   margin-bottom: 1%;
 }
+@media (max-width: 500px) {
+  .top-section .heading {
+    font-size: 2.1rem;
+    width: 80%;
+  }
+}
 .top-section .exposure {
   justify-content: center;
   align-items: center;
@@ -334,6 +353,13 @@ footer .bottom-links a {
   font-family: 'Oxygen', sans-serif;
   line-height: 2.4rem;
   margin-bottom: 1%;
+}
+@media (max-width: 500px) {
+  .top-section .exposure {
+    font-size: 1.8rem;
+    width: 80%;
+    padding-top: 2%;
+  }
 }
 .top-section .find-a-story-btn {
   background-color: white;
@@ -349,21 +375,31 @@ footer .bottom-links a {
   padding-top: 10%;
   padding-bottom: 4%;
 }
-.carousel {
+@media (max-width: 500px) {
+  .top-section .arrow {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .carousel-container {
+    display: none;
+  }
+}
+.carousel-container .carousel {
   position: relative;
   margin-top: 26px;
 }
-.carousel-inner {
+.carousel-container .carousel-inner {
   position: relative;
   overflow: hidden;
   width: 100%;
   height: 90%;
 }
-.carousel-open:checked + .carousel-item {
+.carousel-container .carousel-open:checked + .carousel-item {
   position: static;
   opacity: 100;
 }
-.carousel-item {
+.carousel-container .carousel-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -375,7 +411,7 @@ footer .bottom-links a {
   transition: opacity 0.6s ease-out;
   height: 700px;
 }
-.carousel-item .text {
+.carousel-container .carousel-item .text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -386,32 +422,32 @@ footer .bottom-links a {
   padding-bottom: 5%;
   width: 100%;
 }
-.carousel-item .text .featured-stories-header {
+.carousel-container .carousel-item .text .featured-stories-header {
   padding-bottom: 5%;
   color: white;
   width: 43%;
 }
-.carousel-item .text .story-preview {
+.carousel-container .carousel-item .text .story-preview {
   width: 70%;
   color: white;
   padding-bottom: 5%;
   padding-top: 5%;
 }
-.carousel-item .text .story-preview h2 {
+.carousel-container .carousel-item .text .story-preview h2 {
   padding-bottom: 3%;
 }
-.carousel-item .text .story-preview h3 {
+.carousel-container .carousel-item .text .story-preview h3 {
   font-size: 2.1rem;
   padding-bottom: 3%;
 }
-.carousel-item .text .story-preview p {
+.carousel-container .carousel-item .text .story-preview p {
   width: 100%;
   padding-bottom: 5%;
   font-family: 'Domine', serif;
   font-size: 1.8rem;
   line-height: 2.4rem;
 }
-.carousel-item .text .read {
+.carousel-container .carousel-item .text .read {
   background-color: #25742C;
   border: 0px;
   color: white;
@@ -420,12 +456,12 @@ footer .bottom-links a {
   border-radius: 6px;
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
 }
-.carousel-item img {
+.carousel-container .carousel-item img {
   display: block;
   height: 100%;
   width: 100%;
 }
-.carousel-control {
+.carousel-container .carousel-control {
   background: rgba(0, 0, 0, 0.28);
   border-radius: 50%;
   color: #fff;
@@ -443,22 +479,22 @@ footer .bottom-links a {
   width: 40px;
   z-index: 10;
 }
-.carousel-control.prev {
+.carousel-container .carousel-control.prev {
   left: 2%;
 }
-.carousel-control.next {
+.carousel-container .carousel-control.next {
   right: 2%;
 }
-.carousel-control:hover {
+.carousel-container .carousel-control:hover {
   background: rgba(0, 0, 0, 0.8);
   color: #aaaaaa;
 }
-#carousel-1:checked ~ .control-1,
-#carousel-2:checked ~ .control-2,
-#carousel-3:checked ~ .control-3 {
+.carousel-container #carousel-1:checked ~ .control-1,
+.carousel-container #carousel-2:checked ~ .control-2,
+.carousel-container #carousel-3:checked ~ .control-3 {
   display: block;
 }
-.carousel-indicators {
+.carousel-container .carousel-indicators {
   display: flex;
   justify-content: center;
   list-style: none;
@@ -471,20 +507,20 @@ footer .bottom-links a {
   text-align: center;
   z-index: 10;
 }
-.carousel-indicators ol {
+.carousel-container .carousel-indicators ol {
   display: inline-block;
   margin: 0 5px;
 }
-.carousel-bullet {
+.carousel-container .carousel-bullet {
   color: #fff;
   cursor: pointer;
   display: block;
   font-size: 3.5rem;
 }
-.carousel-bullet:hover {
+.carousel-container .carousel-bullet:hover {
   color: #aaaaaa;
 }
-#title {
+.carousel-container #title {
   width: 100%;
   position: absolute;
   padding: 0px;
@@ -495,6 +531,62 @@ footer .bottom-links a {
   font-family: 'Oxygen', sans-serif;
   z-index: 9999;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+@media (max-width: 500px) {
+  .mobile-tile-view {
+    display: show;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .mobile-tile-view .mobile-headline {
+    text-align: center;
+    padding: 5%;
+  }
+  .mobile-tile-view .story {
+    background-color: #D2DDD3;
+    margin-bottom: 5%;
+    border-radius: 6px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    width: 90%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile-tile-view .story .title-author {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+  .mobile-tile-view .story img {
+    border-radius: 6px;
+    width: 90%;
+    align-self: center;
+  }
+  .mobile-tile-view .story .mobile-tile-paragraph {
+    font-size: 1.6rem;
+    font-family: 'Domine', serif;
+    line-height: 2rem;
+    margin-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  .mobile-tile-view .story .mobile-tile-btn {
+    background-color: #25742C;
+    border: 0px;
+    color: white;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    text-align: center;
+    border-radius: 6px;
+    width: 40%;
+    align-self: center;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    margin-bottom: 2%;
+  }
 }
 h2 {
   font-size: 3.6rem;
