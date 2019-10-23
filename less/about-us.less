@@ -3,8 +3,11 @@ h2{
     padding-bottom: 2%;
 }
 
+
+
 section.about-top{
     display: flex;
+    justify-content: space-between;
     margin: 4% 8%;
 
 
@@ -13,6 +16,9 @@ section.about-top{
         max-width: 48%;
         margin-right: 5%;
         
+        @media @tablet {
+            max-width: 100%;
+        }
 
         h3{
             padding-top: 1%;
@@ -32,11 +38,20 @@ section.about-top{
             padding-bottom: 2%;
         }
 
+        .site-guidelines{
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+
     }
 
     .about-image{
         max-width: 48%;
         align-self: center;
+
+        @media @tablet{
+            display: none;
+        }
     }
 }
 
@@ -46,11 +61,51 @@ section.about-profiles{
     .teammates{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
 
+        @media @tablet {
+           justify-content: column;
+        }
 
         .box{
-            max-width: 48%;
+            display: flex;
+            align-content: center;
+            width: 45%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+
+            @media @tablet{
+                width: 100%;
             }
+
+            .img{
+                max-width: 122px;
+                max-height: 122px;
+            }
+
+            .teammate{
+                width: 100%;
+                padding-left: 6%;
+                align-self: center;
+            
+
+                h3{
+                    padding-top: 1%;
+                    padding-bottom: 2%;
+                    font-weight: bold;
+                }
+
+                p{
+                    font-size: 2.1rem;
+                    line-height: 2.7rem;
+                    font-family: @headline-font;
+                }
+
+            }
+
+
+                    
+        }
     }
 
         

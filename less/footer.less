@@ -3,6 +3,11 @@ footer{
     display: flex;
     justify-content: space-between;
     padding: 2%;
+    height: 130px;
+
+    @media @phone{
+        height: 200px;
+    }
 
     .contact{
         display:flex;
@@ -13,6 +18,22 @@ footer{
         font-size: 1.4rem;
         color: white;
         font-family: @headline-font;
+
+        @media @phone{
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        @media @tablet{
+            width: 50%;
+
+        }
+
+
+
+
+
     }//This closes contact div
 
     .bottom-links{
@@ -20,7 +41,18 @@ footer{
         justify-content: space-evenly;
         align-items: center;
         text-align: center;
-        width: 33%;
+        width: 40%;
+
+        @media @tablet{
+            width: 50%;
+        }
+
+        @media @phone{
+            flex-direction: column;
+            align-items: flex-end;
+            text-align: right;
+        }
+
 
         button{
             .custom-btn(#D2DDD3, 0px, black);
@@ -28,6 +60,7 @@ footer{
             line-height: 2.4rem;
             font-weight: normal;
             padding: 2%;
+            width: 120px;
         }//This closes button 
 
         a{

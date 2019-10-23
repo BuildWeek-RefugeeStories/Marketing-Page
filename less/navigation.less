@@ -4,7 +4,24 @@ nav{
     align-items: center;
     text-align: center;
     background-color: #123A16;
+    width: 100%;
 
+    @media @phone{
+        justify-content: space-between;
+    }
+
+    .website-title{
+        width: 400px;
+
+        @media @phone{
+            width: 45%;
+            
+            h1{
+                font-size: 48px;
+            }
+            
+        }
+    }
 
     .links{
         display: flex;
@@ -12,6 +29,22 @@ nav{
         align-items: center;
         width: 57%;
     
+        @media @phone{
+            justify-content: flex-end;
+            padding-right: 5%;
+        }
+
+        i{
+            display: none;
+            font-size: 3rem;
+            color: white;
+            
+            @media @phone{
+                display: block;
+            }
+
+        }
+
         a {
             font-family: @headline-font;
             font-size: 1.8rem;
@@ -23,6 +56,16 @@ nav{
             color: #FFFFFF;
             text-decoration: none;
         
+            @media @tablet{
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+
+            @media @phone{
+                display: none;
+                
+            }
+
             &:hover{
                text-decoration: underline;
                font-size: 2.1rem; 
