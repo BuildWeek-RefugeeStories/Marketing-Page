@@ -359,16 +359,16 @@ footer .bottom-links a {
   line-height: 2.4rem;
   margin-bottom: 1%;
 }
+@media (max-width: 800px) {
+  .top-section .exposure {
+    width: 80%;
+  }
+}
 @media (max-width: 500px) {
   .top-section .exposure {
     font-size: 1.8rem;
     width: 80%;
     padding-top: 2%;
-  }
-}
-@media (max-width: 800px) {
-  .top-section .exposure {
-    width: 60%;
   }
 }
 .top-section .find-a-story-btn {
@@ -379,6 +379,11 @@ footer .bottom-links a {
   margin: 2%;
   font-size: 1.8rem;
   padding: 0.5% 1%;
+}
+@media (max-width: 500px) {
+  .top-section .find-a-story-btn {
+    display: none;
+  }
 }
 .top-section .arrow {
   font-size: 2rem;
@@ -525,7 +530,7 @@ footer .bottom-links a {
   background-color: #25742C;
   border: 0px;
   color: white;
-  font-size: 1.75rem;
+  font-size: 1.8rem;
   text-align: center;
   border-radius: 6px;
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
